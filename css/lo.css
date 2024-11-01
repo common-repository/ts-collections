@@ -1,0 +1,804 @@
+.addon-container{
+background: #fff;
+padding: 0rem;
+margin: 1rem;
+margin-left: 0;
+}
+.addon-item{
+    display: inline-block;
+    padding: 1rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    margin-right: .5rem;
+    width: 29%;
+}
+.addon-item .title{
+    display: block;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+.addon-item .desc{
+    padding: .5rem;
+    display: block;
+}
+.version{
+    padding-left: .5rem;
+    color: #2962FF;
+}
+.author{
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.author_uri{
+    margin-top: 1rem;
+    display: inline-block;
+    color:#ff3d00;
+    line-height: 30px;
+
+}
+
+.switch{
+    margin-top: 0rem;
+    float: right;
+}
+.switch input{
+    display:none;
+}
+.switch label{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    background: rgb(189, 189, 189);
+    border-radius: 30px;
+    transition: 250ms ease-in;
+}
+.switch label:after{
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    content: '';
+    position: absolute;
+    background: #FFF;
+    border-radius: 10px;
+    transition: 250ms ease-in;
+}
+.switch input:checked + label {
+  background: rgb(39, 173, 95);
+}
+.switch input:checked + label:after {
+  left:50%;
+  
+}
+.button.button-primary{
+margin: 25px;
+background-color: green;
+border: none;
+box-shadow: none;
+
+}
+.addons {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+margin-left: 25px;
+    padding-top: 1.5rem;
+}
+
+.addons:after {
+    content: "";
+    display: table;
+    clear: both
+}
+.addons .col {
+    float: left;
+    
+}
+
+.addons .col[class * ="push-"], .addons .col[class * ="pull-"] {
+    position: relative
+}
+
+.addons .col.s1 {
+    width: 8.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s2 {
+    width: 16.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s3 {
+    width: 25%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s4 {
+    width: 33.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s5 {
+    width: 41.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s7 {
+    width: 58.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s8 {
+    width: 66.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s9 {
+    width: 75%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s10 {
+    width: 83.3333333333%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s11 {
+    width: 91.6666666667%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.s12 {
+    width: 90%;
+    margin-left: auto;
+    left: auto;
+    right: auto
+}
+
+.addons .col.offset-s1 {
+    margin-left: 8.3333333333%
+}
+
+.addons .col.pull-s1 {
+    right: 8.3333333333%
+}
+
+.addons .col.push-s1 {
+    left: 8.3333333333%
+}
+
+.addons .col.offset-s2 {
+    margin-left: 16.6666666667%
+}
+
+.addons .col.pull-s2 {
+    right: 16.6666666667%
+}
+
+.addons .col.push-s2 {
+    left: 16.6666666667%
+}
+
+.addons .col.offset-s3 {
+    margin-left: 25%
+}
+
+.addons .col.pull-s3 {
+    right: 25%
+}
+
+.addons .col.push-s3 {
+    left: 25%
+}
+
+.addons .col.offset-s4 {
+    margin-left: 33.3333333333%
+}
+
+.addons .col.pull-s4 {
+    right: 33.3333333333%
+}
+
+.addons .col.push-s4 {
+    left: 33.3333333333%
+}
+
+.addons .col.offset-s5 {
+    margin-left: 41.6666666667%
+}
+
+.addons .col.pull-s5 {
+    right: 41.6666666667%
+}
+
+.addons .col.push-s5 {
+    left: 41.6666666667%
+}
+
+.addons .col.offset-s6 {
+    margin-left: 50%
+}
+
+.addons .col.pull-s6 {
+    right: 50%
+}
+
+.addons .col.push-s6 {
+    left: 50%
+}
+
+.addons .col.offset-s7 {
+    margin-left: 58.3333333333%
+}
+
+.addons .col.pull-s7 {
+    right: 58.3333333333%
+}
+
+.addons .col.push-s7 {
+    left: 58.3333333333%
+}
+
+.addons .col.offset-s8 {
+    margin-left: 66.6666666667%
+}
+
+.addons .col.pull-s8 {
+    right: 66.6666666667%
+}
+
+.addons .col.push-s8 {
+    left: 66.6666666667%
+}
+
+.addons .col.offset-s9 {
+    margin-left: 75%
+}
+
+.addons .col.pull-s9 {
+    right: 75%
+}
+
+.addons .col.push-s9 {
+    left: 75%
+}
+
+.addons .col.offset-s10 {
+    margin-left: 83.3333333333%
+}
+
+.addons .col.pull-s10 {
+    right: 83.3333333333%
+}
+
+.addons .col.push-s10 {
+    left: 83.3333333333%
+}
+
+.addons .col.offset-s11 {
+    margin-left: 91.6666666667%
+}
+
+.addons .col.pull-s11 {
+    right: 91.6666666667%
+}
+
+.addons .col.push-s11 {
+    left: 91.6666666667%
+}
+
+.addons .col.offset-s12 {
+    margin-left: 100%
+}
+
+.addons .col.pull-s12 {
+    right: 100%
+}
+
+.addons .col.push-s12 {
+    left: 100%
+}
+
+@media only screen and (min-width: 601px) {
+    .addons .col.m1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.m12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.offset-m1 {
+        margin-left: 8.3333333333%
+    }
+
+    .addons .col.pull-m1 {
+        right: 8.3333333333%
+    }
+
+    .addons .col.push-m1 {
+        left: 8.3333333333%
+    }
+
+    .addons .col.offset-m2 {
+        margin-left: 16.6666666667%
+    }
+
+    .addons .col.pull-m2 {
+        right: 16.6666666667%
+    }
+
+    .addons .col.push-m2 {
+        left: 16.6666666667%
+    }
+
+    .addons .col.offset-m3 {
+        margin-left: 25%
+    }
+
+    .addons .col.pull-m3 {
+        right: 25%
+    }
+
+    .addons .col.push-m3 {
+        left: 25%
+    }
+
+    .addons .col.offset-m4 {
+        margin-left: 33.3333333333%
+    }
+
+    .addons .col.pull-m4 {
+        right: 33.3333333333%
+    }
+
+    .addons .col.push-m4 {
+        left: 33.3333333333%
+    }
+
+    .addons .col.offset-m5 {
+        margin-left: 41.6666666667%
+    }
+
+    .addons .col.pull-m5 {
+        right: 41.6666666667%
+    }
+
+    .addons .col.push-m5 {
+        left: 41.6666666667%
+    }
+
+    .addons .col.offset-m6 {
+        margin-left: 50%
+    }
+
+    .addons .col.pull-m6 {
+        right: 50%
+    }
+
+    .addons .col.push-m6 {
+        left: 50%
+    }
+
+    .addons .col.offset-m7 {
+        margin-left: 58.3333333333%
+    }
+
+    .addons .col.pull-m7 {
+        right: 58.3333333333%
+    }
+
+    .addons .col.push-m7 {
+        left: 58.3333333333%
+    }
+
+    .addons .col.offset-m8 {
+        margin-left: 66.6666666667%
+    }
+
+    .addons .col.pull-m8 {
+        right: 66.6666666667%
+    }
+
+    .addons .col.push-m8 {
+        left: 66.6666666667%
+    }
+
+    .addons .col.offset-m9 {
+        margin-left: 75%
+    }
+
+    .addons .col.pull-m9 {
+        right: 75%
+    }
+
+    .addons .col.push-m9 {
+        left: 75%
+    }
+
+    .addons .col.offset-m10 {
+        margin-left: 83.3333333333%
+    }
+
+    .addons .col.pull-m10 {
+        right: 83.3333333333%
+    }
+
+    .addons .col.push-m10 {
+        left: 83.3333333333%
+    }
+
+    .addons .col.offset-m11 {
+        margin-left: 91.6666666667%
+    }
+
+    .addons .col.pull-m11 {
+        right: 91.6666666667%
+    }
+
+    .addons .col.push-m11 {
+        left: 91.6666666667%
+    }
+
+    .addons .col.offset-m12 {
+        margin-left: 100%
+    }
+
+    .addons .col.pull-m12 {
+        right: 100%
+    }
+
+    .addons .col.push-m12 {
+        left: 100%
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .addons .col.l1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.l12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto
+    }
+
+    .addons .col.offset-l1 {
+        margin-left: 8.3333333333%
+    }
+
+    .addons .col.pull-l1 {
+        right: 8.3333333333%
+    }
+
+    .addons .col.push-l1 {
+        left: 8.3333333333%
+    }
+
+    .addons .col.offset-l2 {
+        margin-left: 16.6666666667%
+    }
+
+    .addons .col.pull-l2 {
+        right: 16.6666666667%
+    }
+
+    .addons .col.push-l2 {
+        left: 16.6666666667%
+    }
+
+    .addons .col.offset-l3 {
+        margin-left: 25%
+    }
+
+    .addons .col.pull-l3 {
+        right: 25%
+    }
+
+    .addons .col.push-l3 {
+        left: 25%
+    }
+
+    .addons .col.offset-l4 {
+        margin-left: 33.3333333333%
+    }
+
+    .addons .col.pull-l4 {
+        right: 33.3333333333%
+    }
+
+    .addons .col.push-l4 {
+        left: 33.3333333333%
+    }
+
+    .addons .col.offset-l5 {
+        margin-left: 41.6666666667%
+    }
+
+    .addons .col.pull-l5 {
+        right: 41.6666666667%
+    }
+
+    .addons .col.push-l5 {
+        left: 41.6666666667%
+    }
+
+    .addons .col.offset-l6 {
+        margin-left: 50%
+    }
+
+    .addons .col.pull-l6 {
+        right: 50%
+    }
+
+    .addons .col.push-l6 {
+        left: 50%
+    }
+
+    .addons .col.offset-l7 {
+        margin-left: 58.3333333333%
+    }
+
+    .addons .col.pull-l7 {
+        right: 58.3333333333%
+    }
+
+    .addons .col.push-l7 {
+        left: 58.3333333333%
+    }
+
+    .addons .col.offset-l8 {
+        margin-left: 66.6666666667%
+    }
+
+    .addons .col.pull-l8 {
+        right: 66.6666666667%
+    }
+
+    .addons .col.push-l8 {
+        left: 66.6666666667%
+    }
+
+    .addons .col.offset-l9 {
+        margin-left: 75%
+    }
+
+    .addons .col.pull-l9 {
+        right: 75%
+    }
+
+    .addons .col.push-l9 {
+        left: 75%
+    }
+
+    .addons .col.offset-l10 {
+        margin-left: 83.3333333333%
+    }
+
+    .addons .col.pull-l10 {
+        right: 83.3333333333%
+    }
+
+    .addons .col.push-l10 {
+        left: 83.3333333333%
+    }
+
+    .addons .col.offset-l11 {
+        margin-left: 91.6666666667%
+    }
+
+    .addons .col.pull-l11 {
+        right: 91.6666666667%
+    }
+
+    .addons .col.push-l11 {
+        left: 91.6666666667%
+    }
+
+    .addons .col.offset-l12 {
+        margin-left: 100%
+    }
+
+    .addons .col.pull-l12 {
+        right: 100%
+    }
+
+    .addons .col.push-l12 {
+        left: 100%
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .addon-item{
+        width: 29% !important;
+    }
+}
+.addon-item:nth-of-type(1n+0){
+    border-top:5px solid #fdc93b;
+}
+.addon-item:nth-of-type(2n+0){
+    border-top:5px solid blue;
+}
+.addon-item:nth-of-type(5n+0){
+    border-top:5px solid green;
+}
